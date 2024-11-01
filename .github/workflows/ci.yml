@@ -1,0 +1,17 @@
+name: Continuous Integration - Resuable
+on:
+ - workflow_call
+jobs:
+  Job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v4
+      - run: echo ok
+        name: Code build
+      - run: echo ok
+        name: Code Test
+      - run: echo Ok
+        name: Code Review
+      - run: echo Ok
+        name: Release Software
