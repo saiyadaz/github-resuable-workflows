@@ -1,6 +1,5 @@
 name: Continuous Integration - Resuable
-on:
- - workflow_call
+on: [workflow_call]
 jobs:
   Job_1:
     runs-on: ubuntu-latest
