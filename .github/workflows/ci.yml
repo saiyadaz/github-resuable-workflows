@@ -1,8 +1,8 @@
 name: Continuous Integration - Resuable
 on: [workflow_call]
 jobs:
-  Job_1:
-    runs-on: ubuntu-latest
+  CI_Steps:
+    runs-on:  [self-hosted]
     steps:
       - name: Code Checkout
         uses: actions/checkout@v4
