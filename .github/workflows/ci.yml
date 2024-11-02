@@ -2,7 +2,7 @@ name: Continuous Integration - Resuable
 on: [workflow_call]
 jobs:
   CI_Steps:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
         uses: actions/checkout@v4
@@ -15,4 +15,4 @@ jobs:
       - run: echo Ok
         name: Release Software
 
-        #
+        
