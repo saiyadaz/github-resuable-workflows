@@ -2,7 +2,7 @@ name: Continuous Integration - Resuable
 on: [workflow_call]
 jobs:
   CI_Steps:
-    runs-on: ubuntu-latest
+    runs-on: ci-runner
     steps:
       - name: Code Checkout
         uses: actions/checkout@v4
