@@ -6,12 +6,13 @@ jobs:
     steps:
       - name: Code Checkout
         uses: actions/checkout@v4
-      - run: echo ok
-        name: Code build
-      - run: echo ok
-        name: Code Test
-      - run: echo Ok
-        name: Code Review
-      - run: echo Ok
-        name: Release Software
+      - run: echo OK
+        name: Code Lint
+      #       - run: echo OK
+      #         name: Code Build
+      - run: npm install
+        name: Install NodeJS modules
+      - run: npm run test:unit
+        name: Code Unit Tests
+      - run: npm run test:integration
 
